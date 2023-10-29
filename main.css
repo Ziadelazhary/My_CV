@@ -1,0 +1,249 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color:rgb(214, 213, 213);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 150px;
+}
+
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(43, 43, 158, 0.979);
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255) ;
+} 
+.navigation a{
+    text-decoration: none;
+    color: rgb(43, 43, 158);
+    font-size: 1.15em;
+    font-weight: 600;
+    padding-left: 30px;
+    transition: color 0.15s;
+} 
+
+.navigation a:hover{
+    color: rgb(79, 79, 219)
+}
+
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(pics/mm.jpg) no-repeat;
+    background-attachment:fixed;
+    background-color: rgb(221, 221, 221);
+    
+}
+.maidiv{
+    margin: 135px 0px 0px 600px;
+    height: 400px;
+    width: 400px;
+}
+.main h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: rgb(20, 20, 114);
+    margin-bottom: 10px;
+}
+.main h2{
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.main h4{
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.awards{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(20, 20, 114);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.6em 1em 0.6em 1em;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+.awards:hover{
+    background-color: rgb(43, 43, 158);
+    transform: scale(1.05);
+}
+.ico{
+    margin-left: 5px;
+}
+.ico a{
+    color:black;
+    font-size: 1.6em;
+    padding-right: 20px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(20, 20, 114);
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 17px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:white;
+    width: 21.25em;
+    box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px 10px 20px 10px;
+    cursor: pointer;
+    transition: transform 0.4s  ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.first{
+    width: 20em;
+    height: 15.625em;
+}
+.info{
+    
+    text-align: center;
+    
+}
+.info h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: rgb(43, 43, 158);
+    margin: 12px;
+}
+.info p{
+    font-size: 1em;
+}
+.info .utto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardss{
+    background-color: rgb(221, 221, 221);
+}
+
+.info a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgb(43, 43, 158);
+    color: white;
+    padding: 10px 4px;
+    width: 100px;
+    border-radius: 20px;
+    transition:  background-color 0.2s ease;
+
+}
+.info .zzz:hover{
+    background-color: rgb(88, 88, 199);
+}
+.contact{
+    background-color: white;
+    
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.content .card{
+    display: flex;
+    align-items: center;
+}
+.contact .certificates{
+    font-size: 4.5em;
+    color: rgb(43, 43, 158);
+}
+.contact .info h3{
+    font-size: 1.8em;
+}
+.contact .info p{
+    font-size: 1em;
+}
+.footer{
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.footertitle{
+    font-size: 20px;
+    font-weight: 800;
+}
+.footertitle span{
+    color: rgb(43, 43, 158);
+}
+
+@media(max-width:1300px)
+{
+    body{
+        font-size: 14.5px;
+    }
+}
+
+@media(max-width:1050px)
+{
+    body{
+        font-size: 13px;
+    } 
+    .main{
+        padding: 100px 150px;
+    }
+    .maidiv{
+        margin: 120px 0px 0px 530px;
+    }
+    header{
+        padding: 10px 130px 10px 100px;
+    }
+}
+
+@media(max-width:600px)
+{
+    body{
+        font-size: 12px;
+    } 
+    .main{
+        padding: 100px 150px;
+    }
+    .maidiv{
+        margin: 120px 0px 0px 530px;
+    }
+    
+}
+
+
